@@ -1,0 +1,6 @@
+{
+    "parent":"minecraft:item/handheld",
+    "textures": {
+        "layer0": "fpack:item/red_fox_totem"
+    }
+}

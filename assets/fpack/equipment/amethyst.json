@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "fpack:amethyst"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "fpack:amethyst"
+      }
+    ]
+  }
+}

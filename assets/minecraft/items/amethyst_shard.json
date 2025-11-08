@@ -1,0 +1,26 @@
+{
+    "model": {
+        "type": "minecraft:range_dispatch",
+        "property": "minecraft:custom_model_data",
+        "entries": [
+            {
+                "threshold": 115,
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "fpack:item/amethyst_crown"
+                }
+            },
+            {
+                "threshold": 118,
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "fpack:item/obsidian_spark"
+                }
+            }
+        ],
+        "fallback": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/amethyst_shard"
+        } 
+    }
+}

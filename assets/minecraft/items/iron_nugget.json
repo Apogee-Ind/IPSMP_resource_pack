@@ -1,0 +1,68 @@
+{
+    "model": {
+        "type": "minecraft:range_dispatch",
+        "property": "minecraft:custom_model_data",
+        "entries": [
+            {
+                "threshold": 102,
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "fpack:item/rusty_keeb"
+                }
+            },
+            {
+                "threshold": 106,
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "fpack:item/vault_tec_lunchbox"
+                }
+            },
+            {
+                "threshold": 109,
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "fpack:item/deimos_disc"
+                }
+            },
+            {
+                "threshold": 112,
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "fpack:item/artist_palette"
+                }
+            },
+            {
+                "threshold": 113,
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "fpack:item/warden_key"
+                }
+            },
+            {
+                "threshold": 116,
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "fpack:item/trixite_ingot"
+                }
+            },
+            {
+                "threshold": 119,
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "fpack:item/mountain_egg"
+                }
+            },
+            {
+                "threshold": 121,
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "fpack:item/key_1"
+                }
+            }
+        ],
+        "fallback": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/iron_nugget"
+        } 
+    }
+}
