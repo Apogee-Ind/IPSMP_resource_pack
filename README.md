@@ -5,22 +5,22 @@ _Resource Pack for the Ice Boat SMP._
 > For getting started, first read about resoruce packs on the [Minecraft Wiki](https://minecraft.wiki/w/Resource_pack).  
 
 > [!NOTE] 
-> Note that there are multiple namespaces in this resource pack.  The minecraft namespace is a special in that it will override all vanilla files.  The minecraft namespace folder is also where you will need to pair items to their vanilla item through their numeric range dispatch.
+> Note that there are multiple namespaces in this resource pack.  The minecraft namespace is a special in that it will override all vanilla files.  The minecraft namespace folder is also where you will need to pair items to their vanilla item through their <ins>numeric range dispatch</ins>.
 
 ## Namespace Folders.
 
 ### fpack Folder, through custom commands only
-- <span style="color: red;">./fpack/equipment</span>: Enables pairing for items and custom textures and models. Pairs the texture for the armor when worn. The armor's item texture is in $${\color{red}{./fpack/models/item}}.
-- $${\color{red}{./fpack/lang}}: Used for giving names to banner layers, as seen on a banner's tooltip.
-- $${\color{red}{./fpack/models/item}}: Pairs filename to texture; pairs a custom texture to its model.
-- $${\color{red}{./fpack/textures/...}}: Textures for pairing.
+- __./fpack/equipment__: Enables pairing for items and custom textures and models. Pairs the texture for the armor when worn. The armor's item texture is in __./fpack/models/item__.
+- __./fpack/lang__: Used for giving names to banner layers, as seen on a banner's tooltip.
+- __./fpack/models/item__: Pairs filename to texture; pairs a custom texture to its model.
+- __./fpack/textures/...__: Textures for pairing.
 
 ### minecraft Folder, across the server
-- $${\color{red}{./minecraft/items}}: Enables pairing for items and custom textures through commands. Assigns a specific (custom) model based on certain properties of the item. Right now we use the __numeric range dispatch__.
-- $${\color{red}{./minecraft/lang}}: Across the server, overrides vanilla name with custom name.
-- $${\color{red}{./minecraft/models/item}}: across the server, overrides vanilla texture with custom model. This isn't always required but best practice is to add a model and a texture.
-- $${\color{red}{./minecraft/sounds/item/goat_horn}}: Across the server, overrides vanilla sound with custom sound.
-- $${\color{red}{./minecraft/textures/...}}: tTextures for pairing. If named the same as a vanilla item/block, will override that item/block.
+- __./minecraft/items__: Enables pairing for items and custom textures through commands. Assigns a specific (custom) model based on certain properties of the item. Right now we use the <ins>numeric range dispatch</ins>.
+- __./minecraft/lang__: Across the server, overrides vanilla name with custom name.
+- __./minecraft/models/item__: across the server, overrides vanilla texture with custom model. This isn't always required but best practice is to add a model and a texture.
+- __./minecraft/sounds/item/goat_horn__: Across the server, overrides vanilla sound with custom sound.
+- __./minecraft/textures/...__: tTextures for pairing. If named the same as a vanilla item/block, will override that item/block.
 
 ### special effect
 If the items need to do something special, then that part needs to go into the [fpack repository](https://github.com/Apogee-Ind/fpack) (not to be confused with the fpack folder)
@@ -36,7 +36,7 @@ To get the item in game, you will need to use a command block.
 ```
 /give playerNameHere itemName[dataHere] quantity
 ```
-In dataHere, you need to match the itemName to the item number, aka __numeric range dispatch__, as found in the $${\color{red}{./minecraft/items}} folder.
+In dataHere, you need to match the itemName to the <ins>numeric range dispatch</ins>, as found in the __./minecraft/items__ folder. 
 
 > [!NOTE]
 > It is possible to use the replace item command, but you have to finagle with coordinates and is not recommended at this time.
