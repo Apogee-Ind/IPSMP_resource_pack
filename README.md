@@ -1,11 +1,14 @@
 # IPSMP_resource_pack
-_Resource Pack for the Ice Boat SMP._
+_Core resource pack of the Ice Boat SMP._
 
 > [!IMPORTANT]
 > For getting started, first read about resource packs on the [Minecraft Wiki](https://minecraft.wiki/w/Resource_pack).  There is also a [tutorial](https://minecraft.wiki/w/Tutorial:Creating_a_resource_pack) for creating a resource pack and a [tutorial](https://minecraft.wiki/w/Tutorial:Loading_a_resource_pack) for loading it.
 
 > [!NOTE] 
 > Note that there are multiple namespaces in this resource pack.  The minecraft namespace is a special in that it will override all vanilla files.  The minecraft namespace folder is also where you will need to pair items to their vanilla item through their <ins>numeric range dispatch</ins>.
+
+> [!NOTE] 
+> The commands wiki folder is just for referencing command block commands for acquiring modified items.
 
 ## Resource Pack Namespace Folders.
 
@@ -38,9 +41,8 @@ These need to be in the data folder over in the [fpack repository](https://githu
 This description is solely for banner patterns.  Follow the [tutorial](https://www.planetminecraft.com/blog/make-your-own-banner-patterns-with-a-minecraft-datapack-tutorial/) made by PaintTheFuture.
 - __./reishards/banner_pattern__ : Pairs banner patterns with the translation key. you will need one per pattern.
 - __./reishards/item_modifier__ : Entries for using the "/item modify ..." command.  See the[minecraft wiki](https://minecraft.wiki/w/Item_modifier) on item modifiers
-- __./reishards/recipe__ : Adds recipes. These are craftable with the vanilla item under the hood. See the[minecraft wiki](https://minecraft.wiki/w/Recipe) on item reipes.
+- __./reishards/recipe__ : Adds recipes. These are craftable with the vanilla item under the hood. See the[minecraft wiki](https://minecraft.wiki/w/Recipe) on item recipes.
 - __./reishards/tags/banner_pattern__ : Groups items.  With this, we can have multiple patterns in one item.
-
 
 ## Pushing to Live 
 Once a change has been made, the repo contents has to be zipped and uploaded. Contact an admin (Frijoles_ is a good contact) for a push to live.
