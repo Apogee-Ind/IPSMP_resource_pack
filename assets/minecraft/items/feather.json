@@ -9,6 +9,13 @@
                     "type": "minecraft:model",
                     "model": "fpack:item/stone_angel_wing"
                 }
+            },
+            {
+                "threshold": 700,
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "reishards:item/chicken_feather"
+                }
             }
         ],
         "fallback": {

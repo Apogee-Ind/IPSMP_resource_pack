@@ -1,0 +1,19 @@
+{
+    "model": {
+        "type": "minecraft:range_dispatch",
+        "property": "minecraft:custom_model_data",
+        "entries": [
+            {
+                "threshold": 709,
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "reishards:item/wheat_tiara"
+                }
+            }
+        ],
+        "fallback": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/wheat"
+        } 
+    }
+}

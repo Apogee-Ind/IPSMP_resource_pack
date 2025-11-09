@@ -1,0 +1,19 @@
+{
+    "model": {
+        "type": "minecraft:range_dispatch",
+        "property": "minecraft:custom_model_data",
+        "entries": [
+            {
+                "threshold": 707,
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "reishards:item/suede"
+                }
+            }
+        ],
+        "fallback": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/rabbit_hide"
+        } 
+    }
+}

@@ -53,10 +53,24 @@
                 }
             },
             {
-                "threshold": 121,
+                "threshold": 702,
                 "model": {
                     "type": "minecraft:model",
-                    "model": "fpack:item/key_1"
+                    "model": "reishards:item/key_1"
+                }
+            },
+            {
+                "threshold": 703,
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "reishards:item/key_2"
+                }
+            },
+            {
+                "threshold": 708,
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "reishards:item/vulpine_undercroft_master_key"
                 }
             }
         ],

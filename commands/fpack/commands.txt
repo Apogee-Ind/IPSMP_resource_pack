@@ -1,0 +1,41 @@
+# Items
+
+## item list
+These are notes for referencing.
+
+101: baked_potato -> potato_key
+102: iron_nugget -> rusty_keeb
+103: glass_bottle -> miner_bock
+104: paper -> transport_map
+105: paper -> monumental_blueprint
+106: iron_nugget -> vault_tec_lunchbox
+107: stick -> wizard_staff
+108: stick -> square_hammer
+109: iron_nugget -> deimos_disc
+110: stick -> broken_saxophone
+111: paper -> boatco_catalog
+112: iron_nugget -> artist_palette
+113: iron_nugget -> warden_key
+114: stick -> leftover_plank
+115: amethyst_shard -> amethyst_crown
+116: iron_nugget -> trixite_ingot
+117: stick -> red_fox_totem
+118: amethyst_shard -> obsidian_spark
+119: iron_nugget -> mountain_egg
+120: feather -> stone_angel_wing
+
+## item commands
+
+/give Insert_Player_Name_Here minecraft:amethyst_shard[
+  minecraft:custom_name={"text":"Amethyst Crown"},
+  minecraft:lore=[
+    {"color":"dark_aqua","text":"This once belonged to the ruler of a faraway isle."},
+    {"color":"gray","text":"This relic can be worn."}],
+  minecraft:custom_model_data={floats:[115]},
+  minecraft:equippable={
+    slot:head,
+    swappable:false,
+    asset_id:"fpack:amethyst"
+  }
+] 64
+

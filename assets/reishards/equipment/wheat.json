@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "reishards:wheat"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "reishards:wheat"
+      }
+    ]
+  }
+}
