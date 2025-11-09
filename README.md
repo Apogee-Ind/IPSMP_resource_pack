@@ -30,12 +30,12 @@ Assets in the minecraft folder override all items across the server.
 - __./minecraft/textures/...__ : Textures for pairing. If named the same as a vanilla item/block, will override that item/block.
 
 ### special effect
-If the items need to do something special, then that part needs to go into the [fpack repository](https://github.com/Apogee-Ind/fpack) repo (not to be confused with the fpack namespace folder).
+If the items need to do something special, then that part needs to go into the [fpack repository](https://github.com/Apogee-Ind/fpack/tree/master) repo (not to be confused with the fpack namespace folder).
 
 This includes making usable banner patterns at the loom, and crafting recipes.
 
 ## Data Pack Namespace Folder
-These need to be in the data folder over in the [fpack repository](https://github.com/Apogee-Ind/fpack).  
+These need to be in the data folder over in the [fpack repository](https://github.com/Apogee-Ind/fpack/tree/master).  
 
 ### reishards Folder (or any <namespace> folder other than minecraft)
 This description is solely for banner patterns.  Follow the [tutorial](https://www.planetminecraft.com/blog/make-your-own-banner-patterns-with-a-minecraft-datapack-tutorial/) made by PaintTheFuture.
@@ -50,7 +50,7 @@ Once a change has been made, the repo contents has to be zipped and uploaded. Co
 ## Testing 
 For single player testing, select all contents within the resource pack repo (assets, pack.mcmeta, pack.png, readme.md), right click, and send to compressed folder.  Move the newly created zip to your "resourcepacks" folder, which is found in the installation of your ".minecraft" folder, see the [tutorial](https://minecraft.wiki/w/Tutorial:Loading_a_resource_pack) for loading it.  This will add the resource pack to all of your single player words, and you can turn the asset on or off in the pause menu: Options/Resource Packs.
 
-If you are testing banner patterns, see the [tutorial](https://minecraft.wiki/w/Tutorial:Importing_a_data_pack) for applying it to your single player world.  You will be copying a zip of the [fpack repository](https://github.com/Apogee-Ind/fpack) to make the data pack (data, pack.mcmeta, readme.md).
+If you are testing banner patterns, see the [tutorial](https://minecraft.wiki/w/Tutorial:Importing_a_data_pack) for applying it to your single player world.  You will be copying a zip of the [fpack repository](https://github.com/Apogee-Ind/fpack/tree/master) to make the data pack (data, pack.mcmeta, readme.md).
  
 ### Getting the item
 To get the item in game, you will need to use a command block.
