@@ -10,7 +10,7 @@ _Resource Pack for the Ice Boat SMP._
 ## Namespace Folders.
 
 ### fpack Folder, through custom commands only
-- $${\color{red}{./fpack/equipment}}: Enables pairing for items and custom textures and models. Pairs the texture for the armor when worn. The armor's item texture is in $${\color{red}{./fpack/models/item}}.
+- <span style="color: red;">./fpack/equipment</span>: Enables pairing for items and custom textures and models. Pairs the texture for the armor when worn. The armor's item texture is in $${\color{red}{./fpack/models/item}}.
 - $${\color{red}{./fpack/lang}}: Used for giving names to banner layers, as seen on a banner's tooltip.
 - $${\color{red}{./fpack/models/item}}: Pairs filename to texture; pairs a custom texture to its model.
 - $${\color{red}{./fpack/textures/...}}: Textures for pairing.
