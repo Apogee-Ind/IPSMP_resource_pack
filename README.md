@@ -7,32 +7,53 @@ _Resource Pack for the Ice Boat SMP._
 > [!NOTE] 
 > Note that there are multiple namespaces in this resource pack.  The minecraft namespace is a special in that it will override all vanilla files.  The minecraft namespace folder is also where you will need to pair items to their vanilla item through their <ins>numeric range dispatch</ins>.
 
-## Namespace Folders.
+## Resource Pack Namespace Folders.
 
-### fpack Folder, through custom commands only
-- __./fpack/equipment__: Enables pairing for items and custom textures and models. Pairs the texture for the armor when worn. The armor's item texture is in __./fpack/models/item__.
-- __./fpack/lang__: Used for giving names to banner layers, as seen on a banner's tooltip.
-- __./fpack/models/item__: Pairs filename to texture; pairs a custom texture to its model.
-- __./fpack/textures/...__: Textures for pairing.
+### fpack Folder (or any <namespace> folder other than minecraft)
+Assets in this folder, or any other namespace, are resource changes that can only take effect through custom commands only.
 
-### minecraft Folder, across the server
-- __./minecraft/items__: Enables pairing for items and custom textures through commands. Assigns a specific (custom) model based on certain properties of the item. Right now we use the <ins>numeric range dispatch</ins>.
-- __./minecraft/lang__: Across the server, overrides vanilla name with custom name.
-- __./minecraft/models/item__: across the server, overrides vanilla texture with custom model. This isn't always required but best practice is to add a model and a texture.
-- __./minecraft/sounds/item/goat_horn__: Across the server, overrides vanilla sound with custom sound.
-- __./minecraft/textures/...__: Textures for pairing. If named the same as a vanilla item/block, will override that item/block.
+- __./fpack/equipment__ : Enables pairing for items and custom textures and models. Pairs the texture for the armor when worn. The armor's item texture is in __./fpack/models/item__.
+- __./fpack/lang__ : Used for giving names to banner layers, as seen on a banner's tooltip.
+- __./fpack/models/item__ : Pairs filename to texture; pairs a custom texture to its model.
+- __./fpack/textures/...__ : Textures for pairing.
+
+### minecraft Folder
+Assets in the minecraft folder override all items across the server.
+
+- __./minecraft/items__ : Enables pairing for items and custom textures through commands. Assigns a specific (custom) model based on certain properties of the item. Right now we use the <ins>numeric range dispatch</ins>.
+- __./minecraft/lang__ : Across the server, overrides vanilla name with custom name.
+- __./minecraft/models/item__ : across the server, overrides vanilla texture with custom model. This isn't always required but best practice is to add a model and a texture.
+- __./minecraft/sounds/item/goat_horn__  Across the server, overrides vanilla sound with custom sound.
+- __./minecraft/textures/...__ : Textures for pairing. If named the same as a vanilla item/block, will override that item/block.
 
 ### special effect
-If the items need to do something special, then that part needs to go into the [fpack repository](https://github.com/Apogee-Ind/fpack) (not to be confused with the fpack folder)
+If the items need to do something special, then that part needs to go into the [fpack repository](https://github.com/Apogee-Ind/fpack) repo (not to be confused with the fpack namespace folder).
+
+This includes making usable banner patterns at the loom, and crafting recipes.
+
+## Data Pack Namespace Folder
+These need to be in the data folder over in the [fpack repository](https://github.com/Apogee-Ind/fpack).  
+
+### reishards Folder (or any <namespace> folder other than minecraft)
+This description is solely for banner patterns.  Follow the [tutorial](https://www.planetminecraft.com/blog/make-your-own-banner-patterns-with-a-minecraft-datapack-tutorial/) made by PaintTheFuture.
+- __./reishards/banner_pattern__ : Pairs banner patterns with the translation key. you will need one per pattern.
+- __./reishards/item_modifier__ : Entries for using the "/item modify ..." command.  See the[minecraft wiki](https://minecraft.wiki/w/Item_modifier) on item modifiers
+- __./reishards/recipe__ : Adds recipes. These are craftable with the vanilla item under the hood. See the[minecraft wiki](https://minecraft.wiki/w/Recipe) on item reipes.
+- __./reishards/tags/banner_pattern__ : Groups items.  With this, we can have multiple patterns in one item.
+
 
 ## Pushing to Live 
 Once a change has been made, the repo contents has to be zipped and uploaded. Contact an admin (Frijoles_ is a good contact) for a push to live.
 
 ## Testing 
-For single player testing, select all contents within the resource pack repo (assets, pack.mcmeta, pack.png, readme.md), right click, and send to compressed folder.  Move the newly created zip to your "resourcepacks" folder, which is found in the installation of your ".minecraft/" folder, see the [tutorial](https://minecraft.wiki/w/Tutorial:Loading_a_resource_pack) for loading it.  This will add the resource pack to all of your single player words, and you can turn the asset on or off in the pause menu: Options/Resource Packs.
+For single player testing, select all contents within the resource pack repo (assets, pack.mcmeta, pack.png, readme.md), right click, and send to compressed folder.  Move the newly created zip to your "resourcepacks" folder, which is found in the installation of your ".minecraft" folder, see the [tutorial](https://minecraft.wiki/w/Tutorial:Loading_a_resource_pack) for loading it.  This will add the resource pack to all of your single player words, and you can turn the asset on or off in the pause menu: Options/Resource Packs.
 
+If you are testing banner patterns, see the [tutorial](https://minecraft.wiki/w/Tutorial:Importing_a_data_pack) for applying it to your single player world.  You will be copying a zip of the [fpack repository](https://github.com/Apogee-Ind/fpack) to make the data pack (data, pack.mcmeta, readme.md).
+ 
 ### Getting the item
 To get the item in game, you will need to use a command block.
+
+For understanding the data components, refer to the [minecraft wiki](https://minecraft.wiki/w/Data_component_format) for the.
 ```
 /give playerNameHere itemName[dataHere] quantity
 ```
@@ -47,20 +68,21 @@ In dataHere, For custom item image, you need to match the itemName to the <ins>n
 
 ### Examples
 If you want to get an item that is normal under the hood but is simply retextured with lore.
+
 ```
-/give Rei_Shards minecraft:iron_nugget[
+/give @p minecraft:iron_nugget[
   minecraft:custom_name={"text":"key_1"},
   minecraft:lore=[
-    {"color":"dark_aqua","text":"first line of text"},
-    {"color":"gray","text":"second line of text"}
+    {"color":"dark_aqua","text":"key goes in"},
+    {"color":"gray","text":"treasure comes out"}
   ],
-  minecraft:custom_model_data={floats:[121]},
+  minecraft:custom_model_data={floats:[702]},
 ] 64
 ```
 
 Example of item that has is equippable.
 ```
-/give Rei_Shards minecraft:amethyst_shard[
+/give @p minecraft:amethyst_shard[
   minecraft:custom_name={"text":"Amethyst Crown"},
   minecraft:lore=[
     {"color":"dark_aqua","text":"first line of text"},
@@ -75,20 +97,37 @@ Example of item that has is equippable.
 ] 64
 ```
 
+for getting multiple effects on line line
+If the lore needs multiple effects or coloration, you need to use extra property for that line, you need to use extra
 ```
-/give Rei_Shards minecraft:iron_nugget[
-  minecraft:custom_name={"text":"key_1"},
   minecraft:lore=[
-    {"color":"dark_aqua","text":"key goes in"},
-    {"color":"gray","text":"treasure comes out"}
+    {"color":"dark_aqua","text":"line one ", extra:[{"text":"and obfuscated line continuation","obfuscated":true}, " and readable plain text", {"color": "red" ,"text":"and and blood"} ]},
+    {"color":"gray","text":"second line of text"}
   ],
-  minecraft:custom_model_data={floats:[702]},
+```
+
+```
+/give @p minecraft:snowball[
+  minecraft:custom_name={"text":"Single Line test"},
+  minecraft:lore=[
+    {"color":"dark_aqua","text":"line one ", extra:[{"text":"and obfuscated line continuation","obfuscated":true}, " and readable plain text ", {"color": "red" ,"text":" and blood"} ]},
+    {"color":"gray","text":"you get the picture on this second line."}
+  ]
+] 16
+```
+
+Example of banner item. this needs the data pack installed in order for the provides_banner_patterns to work.
+```
+/give @p minecraft:paper[
+  minecraft:custom_name={"text":"Fox Banner Pattern"},
+  minecraft:lore=[
+    {"color":"dark_aqua","text":"Patterns for a variety of foxes."},
+    {"color":"gray","text":"yip yip."}
+  ],
+  minecraft:custom_model_data={floats:[710]},
+  minecraft:provides_banner_patterns="#reishards:fox_banner_pattern_tag"
 ] 64
 ```
-
-For banners follow the tutorial on https://www.planetminecraft.com/blog/make-your-own-banner-patterns-with-a-minecraft-datapack-tutorial/
-
-
 
 
 

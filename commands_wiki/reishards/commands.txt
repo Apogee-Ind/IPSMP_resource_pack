@@ -1,0 +1,125 @@
+# Items
+
+## item list
+These are notes for referencing.
+
+700: feather -> chicken_feather
+701: emerald -> emerald_amulet
+702: iron_nugget -> key_1
+703: iron_nugget -> key_2
+704: leather -> nubuck
+705: rabbit_foot -> rabbit_skull
+706: egg -> spotted_egg
+707: rabbit_hide -> suede
+708: iron_nugget -> vulpine_undercroft_master_key
+709: wheat -> wheat_tiara
+710: paper -> fox_banner_pattern
+
+## item commands
+
+/give @p minecraft:feather[
+  minecraft:custom_name={"text":"chicken_feather"},
+  minecraft:lore=[
+    {"color":"dark_aqua","text":"A feather of an unusual breed of chicken."},
+    {"color":"gray","text":"second line of text"}
+  ],
+  minecraft:custom_model_data={floats:[700]},
+] 64
+
+/give @p minecraft:emerald[
+  minecraft:custom_name={"text":"emerald_amulet"},
+  minecraft:lore=[
+    {"color":"dark_aqua","text":"A cheap amulet, worth one emerald."},
+    {"color":"gray","text":"second line of text"}
+  ],
+  minecraft:custom_model_data={floats:[701]},
+] 64
+
+/give @p minecraft:iron_nugget[
+  minecraft:custom_name={"text":"key_1"},
+  minecraft:lore=[
+    {"color":"dark_aqua","text":"An Iron key found in the Vulpine Undercroft"},
+    {"color":"gray","text":"second line of text"}
+  ],
+  minecraft:custom_model_data={floats:[702]},
+] 64
+
+/give @p minecraft:iron_nugget[
+  minecraft:custom_name={"text":"key_2"},
+  minecraft:lore=[
+    {"color":"dark_aqua","text":"An Iron key found in the ", extra:[{"text":"......","obfuscated":true}]},
+    {"color":"gray","text":"second line of text"}
+  ],
+  minecraft:custom_model_data={floats:[703]},
+] 64
+
+/give @p minecraft:leather[
+  minecraft:custom_name={"text":"nubuck"},
+  minecraft:lore=[
+    {"color":"dark_aqua","text":"Fine nubuck, processed from high quality leather."},
+    {"color":"gray","text":"second line of text"}
+  ],
+  minecraft:custom_model_data={floats:[704]},
+] 64
+
+/give @p minecraft:rabbit_foot[
+  minecraft:custom_name={"text":"rabbit_skull"},
+  minecraft:lore=[
+    {"color":"dark_aqua","text":"The skull of a rabbit."},
+    {"color":"gray","text":"second line of text"}
+  ],
+  minecraft:custom_model_data={floats:[705]},
+] 64
+
+/give @p minecraft:egg[
+  minecraft:custom_name={"text":"spotted_egg"},
+  minecraft:lore=[
+    {"color":"dark_aqua","text":"A spotted egg."},
+    {"color":"gray","text":"second line of text"}
+  ],
+  minecraft:max_stack_size=64,
+  minecraft:custom_model_data={floats:[706]},
+] 64
+
+/give @p minecraft:rabbit_hide[
+  minecraft:custom_name={"text":"suede"},
+  minecraft:lore=[
+    {"color":"dark_aqua","text":"Fine suede, processed from high quality rabbit hide."},
+    {"color":"gray","text":"second line of text"}
+  ],
+  minecraft:custom_model_data={floats:[707]},
+] 64
+
+/give @p minecraft:iron_nugget[
+  minecraft:custom_name={"text":"Vulpine Undercroft Master Key"},
+  minecraft:lore=[
+    {"color":"dark_aqua","text":"The master key to the Vulpine Undercroft."},
+    {"color":"gray","text":"Doesn't look like it will fit the normal doors."}
+  ],
+  minecraft:custom_model_data={floats:[708]},
+] 64
+
+/give @p minecraft:wheat[
+  minecraft:custom_name={"text":"Wheat Tiara"},
+  minecraft:lore=[
+    {"color":"dark_aqua","text":"A symbol of abundance."},
+    {"color":"gray","text":"Someone was probably stabbed wearing one of these."}],
+  minecraft:custom_model_data={floats:[709]},
+  minecraft:equippable={
+    slot:head,
+    swappable:false,
+    asset_id:"reishards:wheat"
+  }
+] 64
+
+/give @p minecraft:paper[
+  minecraft:custom_name={"text":"Fox Banner Pattern"},
+  minecraft:lore=[
+    {"color":"dark_aqua","text":"Patterns for a variety of foxes."},
+    {"color":"gray","text":"yip yip."}
+  ],
+  minecraft:custom_model_data={floats:[710]},
+  minecraft:provides_banner_patterns="#reishards:fox_banner_pattern_tag"
+] 64
+
+
