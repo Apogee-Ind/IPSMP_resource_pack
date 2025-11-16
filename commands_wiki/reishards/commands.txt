@@ -123,3 +123,11 @@ These are notes for referencing.
 ] 64
 
 
+/give @p minecraft:paper[
+  minecraft:custom_name={"text":"Obscure Reverse Banner Pattern"},
+  minecraft:lore=[
+    {"color":"dark_aqua","text":"For one sided patterns"}
+  ],
+  minecraft:custom_model_data={floats:[711]},
+  minecraft:provides_banner_patterns="#reishards:obscure_reverse_pattern_tag"
+] 64
