@@ -32,7 +32,7 @@ Assets in the minecraft folder override all items across the server.
 ### special effect
 If the items need to do something special, then that part needs to go into the [fpack repository](https://github.com/Apogee-Ind/fpack/tree/master) repo (not to be confused with the fpack namespace folder).
 
-This includes making usable banner patterns at the loom, and crafting recipes.
+This includes making usable banner patterns at the loom, and crafting recipes. a good resource for the recipe json can be found at [misode]{https://misode.github.io/recipe/}.
 
 ## Data Pack Namespace Folder
 These need to be in the data folder over in the [fpack repository](https://github.com/Apogee-Ind/fpack/tree/master).  
@@ -40,8 +40,8 @@ These need to be in the data folder over in the [fpack repository](https://githu
 ### reishards Folder (or any <namespace> folder other than minecraft)
 This description is solely for banner patterns.  Follow the [tutorial](https://www.planetminecraft.com/blog/make-your-own-banner-patterns-with-a-minecraft-datapack-tutorial/) made by PaintTheFuture.
 - __./reishards/banner_pattern__ : Pairs banner patterns with the translation key. you will need one per pattern.
-- __./reishards/item_modifier__ : Entries for using the "/item modify ..." command.  See the[minecraft wiki](https://minecraft.wiki/w/Item_modifier) on item modifiers
-- __./reishards/recipe__ : Adds recipes. These are craftable with the vanilla item under the hood. See the[minecraft wiki](https://minecraft.wiki/w/Recipe) on item recipes.
+- __./reishards/item_modifier__ : Entries for using the "/item modify ..." command.  See the [minecraft wiki](https://minecraft.wiki/w/Item_modifier) on item modifiers
+- __./reishards/recipe__ : Adds recipes. These are craftable with the vanilla item under the hood. See the [minecraft wiki](https://minecraft.wiki/w/Recipe) on item recipes.
 - __./reishards/tags/banner_pattern__ : Groups items.  With this, we can have multiple patterns in one item.
 
 ## Pushing to Live 
