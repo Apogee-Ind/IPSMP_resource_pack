@@ -35,7 +35,7 @@
                 "threshold": 711,
                 "model": {
                     "type": "minecraft:model",
-                    "model": "reishards:item/obscure_reverse_banner_pattern"
+                    "model": "reishards:item/obscured_banner_pattern"
                 }
             }
         ],
