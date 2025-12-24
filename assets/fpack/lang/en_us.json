@@ -30,5 +30,21 @@
     "block.fpack.banner.lighthouse.white": "White Lighthouse",
     "block.fpack.banner.lighthouse.light_gray": "Light Gray Lighthouse",
     "block.fpack.banner.lighthouse.gray": "Gray Lighthouse",
-    "block.fpack.banner.lighthouse.black": "Black Lighthouse"
+    "block.fpack.banner.lighthouse.black": "Black Lighthouse",
+    "block.fpack.banner.rowboat.red": "Red Rowboat",
+    "block.fpack.banner.rowboat.brown": "Brown Rowboat",
+    "block.fpack.banner.rowboat.orange": "Orange Rowboat",
+    "block.fpack.banner.rowboat.yellow": "Yellow Rowboat",
+    "block.fpack.banner.rowboat.lime": "Lime Rowboat",
+    "block.fpack.banner.rowboat.green": "Green Rowboat",
+    "block.fpack.banner.rowboat.cyan": "Cyan Rowboat",
+    "block.fpack.banner.rowboat.light_blue": "Light Blue Rowboat",
+    "block.fpack.banner.rowboat.blue": "Blue Rowboat",
+    "block.fpack.banner.rowboat.purple": "Purple Rowboat",
+    "block.fpack.banner.rowboat.magenta": "Magenta Rowboat",
+    "block.fpack.banner.rowboat.pink": "Pink Rowboat",
+    "block.fpack.banner.rowboat.white": "White Rowboat",
+    "block.fpack.banner.rowboat.light_gray": "Light Gray Rowboat",
+    "block.fpack.banner.rowboat.gray": "Gray Rowboat",
+    "block.fpack.banner.rowboat.black": "Black Rowboat"
 }
