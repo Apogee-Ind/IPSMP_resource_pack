@@ -1,0 +1,6 @@
+{
+    "parent": "minecraft:block/cube_all",
+    "textures": {
+        "all": "fpack:block/birch_leaves_fall"
+    }
+}
